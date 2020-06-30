@@ -1,15 +1,17 @@
 
 
   <div class="jumbotron">
-    <h1> Authentication Demo </h1>
-    <p>Welcome to the Authentication Demo </p>
+    <h1> SkillSet Showdown </h1>
+    <p>Welcome to the SkillSet Showdown </p>
+    <p>Enter coding competitions to win grand prizes!</p>
     <ul>
-      <li><a href="/dbdemo">See database API </a></li>
       <% if (loggedIn) {%>
       <li><a href="/profile">See your profile </a></li>
       <li><a href="/profiles">See everyone's profile</a></li>
       <li><a href="/todo">See your to do list </a></li>
       <li><a href="/todoAjax">See your to do list with Ajax </a></li>
+      <% } else { %>
+      <p> Please Log in in order to enter competitions! </p>
       <% } %>
     </ul>
   </div>
